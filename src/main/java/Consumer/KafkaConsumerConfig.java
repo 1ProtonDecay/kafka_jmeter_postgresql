@@ -19,7 +19,6 @@ public class KafkaConsumerConfig {
 
     // Используя аннотацию @Value, получаем значение свойства "kafka.bootstrap.servers" из файла конфигурации (application.properties).
     // Обычно это адрес сервера Kafka брокера.
-//   @Value("${kafka.bootstrap.servers}")  ---- убрал
     private String bootstrapServers;
     // Создается объект типа Map<String, Object> с конфигурационными параметрами для потребителя Kafka
     @Bean
