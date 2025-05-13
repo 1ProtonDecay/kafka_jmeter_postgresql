@@ -9,7 +9,6 @@ import org.springframework.kafka.annotation.EnableKafka; // активирует
 import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory; // фабрика контейнеров для обработки асинхронных запросов сообщений Kafka
 import org.springframework.kafka.core.ConsumerFactory;
 import org.springframework.kafka.core.DefaultKafkaConsumerFactory; // фабричный класс для создания потребителей Kafka
-
 import java.util.HashMap;
 import java.util.Map;
 

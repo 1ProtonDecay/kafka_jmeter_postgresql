@@ -16,7 +16,7 @@ public class Listener {
     //  Репозиторий для сохранения сообщений
     private final MessageRepository messageRepository;
     // Обработчик сообщений от топика Kafka
-    @KafkaListener(topics = "TestTopic", groupId = "console-consumer-31363")
+    @KafkaListener(topics = "TestTopic", groupId = "console-consumer-66482")
     public void handleMessage(@Payload String payload) {
         // Логируем входящее сообщение
         log.info("Received Kafka message: {}", payload);
@@ -43,7 +43,7 @@ public class Listener {
             log.info("Сообщение сохранено с ID={} и значением Head={}. Время получения: {}",
                     msgId, head, currentTimeMillis);
         } catch (Exception e) {
-            log.error("Error processing message: ", e);
+            log.error("Ошибка обработки сообщения: ", e);
         }
     }
 }
